@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background: #dddddd;
+            display: inline-block;
+            margin-right: 10px;
+            border: 1px solid #AAAAAA;
+        }
+        .azul {
+            background: #0074d9;
+            border: 1px solid #000;
+        }
+        .rojo {
+            background: #FF4136;
+            border: 1px solid #000;
+        }
+        .thumb {
+            width: 200px;
+            transition: 300ms all ease;
+        }
+        .grande {
+            width: 400px;
+        }
+        .titulo {
+            border: 1px solid navy;
+            background: #ccc;
+            padding: 10px;
+        }
+        .tituloGrande {
+            font-size: 60px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Sitio web</h1>
+    <div id="subtítulo"></div>
+    <p>1. Lorem ipsum, <b>dolor</b> sit amet consectetur adipisicing elit. Corporis ex esse, inventore vero nobis iste quia quos, vel voluptatem perferendis nisi beatae totam placeat dolorem suscipit necessitatibus voluptatibus nostrum magnam!</p>
+    <p id="segundo">2. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis ex esse, inventore vero nobis iste quia quos, vel voluptatem perferendis nisi beatae totam placeat dolorem suscipit necessitatibus voluptatibus nostrum magnam!</p>
+    <p>3. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis ex esse, inventore vero nobis iste quia quos, vel voluptatem perferendis nisi beatae totam placeat dolorem suscipit necessitatibus voluptatibus nostrum magnam!</p>
+    <form action="">
+        <input type="text" id="numero1">
+        <input type="text" id="numero2">
+        <input type="button" value="Sumar" onclick="alert(suma(10, 50));">
+    </form>
+    <ol id="lista">
+        <li id="primero">Lorem ipsum dolor sit amet.</li>
+        <li>Asperiores ad, quam unde. Fuga.</li>
+    </ol>
+    <section id="contenedor">
+        <div class=""></div>
+        <div class=""></div>
+    </section>
+    <h1 id="encabezado" class="">Soy un encabezado \^.^/</h1>
+    <form action="">
+        <input type="button" value="Cambio de Tamaño" onclick="zoom();">
+    </form>
+    <img id="thumb" class="thumb" src="http://lorempixel.com/400/400/" width="400" alt="">
+    <button id="boton">Boton</button>
+    <input type="text" id="input">
+    <a id="boton" href="http://www.falconmasters.com">FalconMasters</a>
+    <form action="" name="formulario" method="get">
+        <input type="text" name="nombre" id="nombre" maxlength="30" placeholder="Nombre:">
+        <br>
+        <input type="radio" name="sexo" id="hombre" value="Hombre"> Hombre
+        <input type="radio" name="sexo" id="mujer" value="Mujer"> Mujer
+        <br>
+        <input type="checkbox" name="terminos" id="terminos"> Términos y condiciones
+        <br>
+        <input type="submit" id="btn" name="btn" value="Enviar">
+    </form>
+    <div class="contenedor">
+		<button class="btn-agregar" id="btn-agregar">Agregar Elemento</button>
+		<div class="lista" id="lista">
+			<a href="#">
+				Elemento <i class="bi bi-check-square-fill"></i>
+			</a>
+			<a href="#">
+				Elemento <i class="bi bi-check-square-fill"></i>
+			</a>
+			<a href="#">
+				Elemento <i class="bi bi-check-square-fill"></i>
+			</a>
+		</div>
+	</div>
+    <script src="JS/intro.js"></script>
+</body>
+</html>
